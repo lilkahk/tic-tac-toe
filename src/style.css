@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: myFont;
-    src: url(./fonts/crossed_out/Crossed\ Out.ttf);
+    src: url(./fonts/crossed_out/Crossed\ Out.ttf) format('truetype');
   }
 
 body {
@@ -67,22 +67,31 @@ h1 {
     border-bottom: 4px solid var(--background-color);
 }
 
-.player-names {
+.player-names, .setup {
     display: flex;
     gap: 255px;
     margin-bottom: 32px;
 }
 
-.player-input {
+.player-input, .ai-input {
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-.before-game {
+.ai-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+}
+
+.before-game-player, .before-game-ai {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    display: none;
 }
 
 .end-game-modal {
@@ -106,5 +115,41 @@ h1 {
 .end-game-modal button:hover {
     font-size: 18px;
     background-color: rgb(226, 226, 222);
-    
+}
+
+.ai-or-p2 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+.choice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+}
+
+.choice-title {
+    margin-top: 64px;
+    font-size: 2rem;
+}
+
+
+.or {
+    font-size: 1.5rem;
+}
+
+.ai, .p2 {
+    font-size: 3rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    padding: 3px 8px;
+    border-radius: 16px;
+}
+
+.ai:hover, .p2:hover {
+    font-size: 3.7rem;
+    margin: 0px -12px -16px -2px;
 }
