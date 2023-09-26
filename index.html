@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+
+    <!-- Player chooses to play against ai or second player before the game starts -->
+    <div class="ai-or-p2">
+        <div class="choice-title">Play Against</div>
+        <div class="choice">
+            <div class="ai">AI</div>
+            <div class="or">or</div>
+            <div class="p2">P2</div>
+        </div>
+    </div>
+
+    <!-- If P2 -->
+    <div class="before-game-player"></div>
+
+    <!-- If AI -->
+    <div class="before-game-ai"></div>
+
+    <!-- The game -->
+    <div class="during-game">
+        <div class="player-one-score">
+            <h2>Player one</h2>
+            <p></p>
+        </div>
+        <div class="board">
+            <div id="s0" class="square"></div>
+            <div id="s1" class="square"></div>
+            <div id="s2" class="square"></div>
+            <div id="s3" class="square"></div>
+            <div id="s4" class="square"></div>
+            <div id="s5" class="square"></div>
+            <div id="s6" class="square"></div>
+            <div id="s7" class="square"></div>
+            <div id="s8" class="square"></div>
+        </div>
+        <dialog class="end-game-modal"></dialog>
+        <div class="player-two-score">
+            <h2>Player two</h2>
+            <p></p>
+        </div>
+    </div>
+</body>
+</html>
