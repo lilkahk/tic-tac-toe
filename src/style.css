@@ -96,6 +96,7 @@ h1 {
 
 .end-game-modal {
     display: grid;
+    height: 100px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 12px;
