@@ -1,3 +1,3 @@
 # tic-tac-toe
 
-My player vs player tic-tac-toe game
+Play vs computer or a second player
